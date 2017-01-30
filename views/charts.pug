@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 #{title}
+
+  table
+    tr
+      th Rank
+      th Name
+      th Description
+      th Change
+    each bot in bots
+      tr
+        each val in bot
+          td= val
